@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form Assignment</title>
+    <style>
+        table {
+            margin: auto;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>แบบสอบถาม</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td><b>ข้อมูลผู้ตอบแบบสอบถาม</b></td>
+            </tr>
+            <tr>
+                <td>ชื่อ-นามสกุล:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>เพศ:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked> ชาย
+                    <input type="radio" name="gender" value="female"> หญิง
+                </td>
+            </tr>
+            <tr>
+                <td>สังกัดคณะ:</td>
+                <td>
+                    <select name="faculty">
+                        <option value="science">วิทยาศาสตร์</option>
+                        <option value="engineering">วิศวกรรมศาสตร์</option>
+                        <option value="arts">ศิลปศาสตร์</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>แม่สีที่ชื่นชอบ:</td>
+                <td>
+                    <input type="text" name="favorite_color">
+                </td>
+            </tr>
+            <tr>
+                <td>ผลไม้ที่ชื่นชอบ:</td>
+                <td>
+                    <input type="text" name="favorite_fruit">
+                </td>
+            </tr>
+            <tr>
+                <td>อาหารที่ชื่นชอบ:</td>
+                <td>
+                    <input type="text" name="favorite_food">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">ส่งแบบสอบถาม</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
