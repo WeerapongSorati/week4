@@ -1,15 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeerapongSorati - Home</title>
+    <title>Boy - เกี่ยวกับ</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        nav {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        header {
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 3px solid #00ffcc;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #121212;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        main h2 {
+            color: #00ffcc;
+        }
+        main table {
+            margin: 2rem auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        main table th, main table td {
+            border: 1px solid #00ffcc;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        main table th {
+            background-color: #1f4037;
+            color: #ffffff;
+        }
+        main table tr:nth-child(even) {
+            background-color: #1f1f1f;
+        }
+        main table tr:nth-child(odd) {
+            background-color: #121212;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 3px solid #00ffcc;
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html"></a>
-    <a href="about.html"></a>
-    <a href="contact.html"></a>
-    <h1>Boy</h1>
-    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <h1>เกี่ยวกับเว็บไซต์</h1>
+    </header>
+    <main>
+        <h2>ข้อมูลประเทศและเมืองหลวง</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ชื่อประเทศ</th>
+                    <th>เมืองหลวง</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ประเทศไทย</td>
+                    <td>กรุงเทพมหานคร</td>
+                </tr>
+                <tr>
+                    <td>สหรัฐอเมริกา</td>
+                    <td>วอชิงตัน ดี.ซี.</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="path/to/image.jpg" alt="ตัวอย่างภาพ" style="display:block; margin:2rem auto; max-width:80%; border:3px solid #00ffcc;">
+    </main>
+    <footer>
+        <p>&copy; 2024 Boy.com</p>
+    </footer>
 </body>
 </html>
